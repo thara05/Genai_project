@@ -9,7 +9,7 @@ import gradio as gr
 from PIL import Image, ImageDraw, ImageFont
 
 
-genai.configure(api_key="AIzaSyABWFC-6qcMv9uXGMlQAWRWFNLizR2AafE")
+genai.configure(api_key="your_api_key")
 
 model = genai.GenerativeModel(
     "gemini-1.5-flash",
@@ -101,3 +101,4 @@ app = gr.Interface(
 )
 
 app.launch()
+
